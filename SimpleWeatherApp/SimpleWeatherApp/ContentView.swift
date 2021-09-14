@@ -18,7 +18,7 @@ struct ContentView: View {
             }
     }
     
-    func handleResponse(data: Result<CurrentWeatherForecast, Error>) {
+    func handleResponse(data: Result<CurrentWeatherForecast, WeatherAPIError>) {
         switch data {
         case .success(let weatherForecast):
             print(weatherForecast)
