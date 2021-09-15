@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA433EE326EFA9BA0058A42A /* SimpleWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EE226EFA9BA0058A42A /* SimpleWeatherAppApp.swift */; };
-		FA433EE526EFA9BA0058A42A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EE426EFA9BA0058A42A /* ContentView.swift */; };
+		FA433EE526EFA9BA0058A42A /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EE426EFA9BA0058A42A /* CurrentWeatherView.swift */; };
 		FA433EE726EFA9BF0058A42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA433EE626EFA9BF0058A42A /* Assets.xcassets */; };
 		FA433EEA26EFA9BF0058A42A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA433EE926EFA9BF0058A42A /* Preview Assets.xcassets */; };
 		FA433EF526EFA9BF0058A42A /* SimpleWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EF426EFA9BF0058A42A /* SimpleWeatherAppTests.swift */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		FA433EDF26EFA9BA0058A42A /* SimpleWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA433EE226EFA9BA0058A42A /* SimpleWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppApp.swift; sourceTree = "<group>"; };
-		FA433EE426EFA9BA0058A42A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA433EE426EFA9BA0058A42A /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		FA433EE626EFA9BF0058A42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA433EE926EFA9BF0058A42A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA433EEB26EFA9BF0058A42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				FA894C6F26F1711B0037064E /* ViewModels */,
 				FA433F1026EFAEB30058A42A /* Networking */,
 				FA433EE226EFA9BA0058A42A /* SimpleWeatherAppApp.swift */,
-				FA433EE426EFA9BA0058A42A /* ContentView.swift */,
+				FA433EE426EFA9BA0058A42A /* CurrentWeatherView.swift */,
 				FA433EE626EFA9BF0058A42A /* Assets.xcassets */,
 				FA433EEB26EFA9BF0058A42A /* Info.plist */,
 				FA433EE826EFA9BF0058A42A /* Preview Content */,
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA433F1226EFAF3E0058A42A /* WeatherAPI.swift in Sources */,
-				FA433EE526EFA9BA0058A42A /* ContentView.swift in Sources */,
+				FA433EE526EFA9BA0058A42A /* CurrentWeatherView.swift in Sources */,
 				FA894C7126F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */,
 				FA433EE326EFA9BA0058A42A /* SimpleWeatherAppApp.swift in Sources */,
 				FA433F1C26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */,

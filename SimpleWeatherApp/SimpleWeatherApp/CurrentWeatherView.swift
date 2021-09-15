@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CurrentWeatherView.swift
 //  SimpleWeatherApp
 //
 //  Created by Alex Ciobanu on 9/13/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CurrentWeatherView: View {
     @StateObject var viewModel = CurrentWeatherViewModel()
     
     var body: some View {
@@ -37,11 +37,11 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CurrentWeatherView()
                     .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
                     .previewDisplayName("iPhone 12")
 
-                ContentView()
+                CurrentWeatherView()
                     .previewDevice(PreviewDevice(rawValue: "iPhone 12 Mini"))
                     .previewDisplayName("iPhone 12 Mini")
     }
