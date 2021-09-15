@@ -8,22 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .onAppear {
-                let api = WeatherAPI()
-                api.getCurrentWeather(zip: "48381", completionHandler: handleResponse)
-                // Get data here
-            }
-    }
+    @StateObject var viewModel = CurrentWeatherViewModel()
     
-    func handleResponse(data: Result<CurrentWeatherForecast, WeatherAPIError>) {
-        switch data {
-        case .success(let weatherForecast):
-            print(weatherForecast)
-        case .failure(let error):
-            print(error)
+    var body: some View {
+        VStack(spacing: 30
+        ) {
+            if let weather = viewModel.currentWeather {
+                Text(weather.name)
+                    .font(.system(size: 70))
+                Text(weather.weather[0].description.capitalized)
+                    .font(.system(size: 25))
+                Text("\(Int(weather.main.temp.rounded()))º")
+                    .font(.system(size: 90))
+                Text("Hi: \(Int(weather.main.tempMax))º")
+                    .font(.system(size: 25))
+                Text("Low: \(Int(weather.main.tempMin))º")
+                    .font(.system(size: 25))
+            } else {
+                Text("Loading")
+                    .font(.system(size: 25))
+            }
+        }
+        .onAppear {
+            viewModel.fetchCurrentWeather()
         }
     }
 }
@@ -31,6 +38,12 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+                    .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
+                    .previewDisplayName("iPhone 12")
+
+                ContentView()
+                    .previewDevice(PreviewDevice(rawValue: "iPhone 12 Mini"))
+                    .previewDisplayName("iPhone 12 Mini")
     }
 }
 
