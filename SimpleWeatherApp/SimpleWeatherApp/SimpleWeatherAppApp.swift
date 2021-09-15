@@ -11,7 +11,17 @@ import SwiftUI
 struct SimpleWeatherAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                CurrentWeatherView()
+                    .tabItem {
+                        Label("Current", systemImage: "clock")
+                    }
+                
+                Text("5 Day")
+                    .tabItem {
+                        Label("5 Day", systemImage: "5.circle")
+                    }
+            }
         }
     }
 }
