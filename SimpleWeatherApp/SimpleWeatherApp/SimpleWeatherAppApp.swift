@@ -17,7 +17,7 @@ struct SimpleWeatherAppApp: App {
                         Label("Current", systemImage: "clock")
                     }
                 
-                Text("5 Day")
+                FiveDayWeatherView()
                     .tabItem {
                         Label("5 Day", systemImage: "5.circle")
                     }
