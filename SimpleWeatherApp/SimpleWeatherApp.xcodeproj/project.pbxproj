@@ -17,6 +17,8 @@
 		FA433F1326EFAF3E0058A42A /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433F1126EFAF3E0058A42A /* WeatherAPI.swift */; };
 		FA433F1C26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433F1B26EFE2030058A42A /* CurrentWeatherForecast.swift */; };
 		FA433F1D26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433F1B26EFE2030058A42A /* CurrentWeatherForecast.swift */; };
+		FA894C7126F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */; };
+		FA894C7226F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		FA433F0126EFA9BF0058A42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA433F1126EFAF3E0058A42A /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		FA433F1B26EFE2030058A42A /* CurrentWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherForecast.swift; sourceTree = "<group>"; };
+		FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		FA433EE126EFA9BA0058A42A /* SimpleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA894C6F26F1711B0037064E /* ViewModels */,
 				FA433F1026EFAEB30058A42A /* Networking */,
 				FA433EE226EFA9BA0058A42A /* SimpleWeatherAppApp.swift */,
 				FA433EE426EFA9BA0058A42A /* ContentView.swift */,
@@ -152,6 +156,14 @@
 				FA433F1B26EFE2030058A42A /* CurrentWeatherForecast.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA894C6F26F1711B0037064E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +297,7 @@
 			files = (
 				FA433F1226EFAF3E0058A42A /* WeatherAPI.swift in Sources */,
 				FA433EE526EFA9BA0058A42A /* ContentView.swift in Sources */,
+				FA894C7126F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */,
 				FA433EE326EFA9BA0058A42A /* SimpleWeatherAppApp.swift in Sources */,
 				FA433F1C26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */,
 			);
@@ -297,6 +310,7 @@
 				FA433F1D26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */,
 				FA433EF526EFA9BF0058A42A /* SimpleWeatherAppTests.swift in Sources */,
 				FA433F1326EFAF3E0058A42A /* WeatherAPI.swift in Sources */,
+				FA894C7226F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
