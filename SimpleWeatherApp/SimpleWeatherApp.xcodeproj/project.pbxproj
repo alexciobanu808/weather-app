@@ -19,6 +19,8 @@
 		FA433F1D26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433F1B26EFE2030058A42A /* CurrentWeatherForecast.swift */; };
 		FA894C7126F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */; };
 		FA894C7226F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */; };
+		FA894C8726F254520037064E /* FiveDayWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA894C8626F254520037064E /* FiveDayWeatherForecast.swift */; };
+		FA894C8826F254520037064E /* FiveDayWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA894C8626F254520037064E /* FiveDayWeatherForecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		FA433F1126EFAF3E0058A42A /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		FA433F1B26EFE2030058A42A /* CurrentWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherForecast.swift; sourceTree = "<group>"; };
 		FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
+		FA894C8626F254520037064E /* FiveDayWeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayWeatherForecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				FA433F1B26EFE2030058A42A /* CurrentWeatherForecast.swift */,
+				FA894C8626F254520037064E /* FiveDayWeatherForecast.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +309,7 @@
 			files = (
 				FA433F1226EFAF3E0058A42A /* WeatherAPI.swift in Sources */,
 				FA433EE526EFA9BA0058A42A /* CurrentWeatherView.swift in Sources */,
+				FA894C8726F254520037064E /* FiveDayWeatherForecast.swift in Sources */,
 				FA894C7126F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */,
 				FA433EE326EFA9BA0058A42A /* SimpleWeatherAppApp.swift in Sources */,
 				FA433F1C26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */,
@@ -317,6 +322,7 @@
 			files = (
 				FA433F1D26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */,
 				FA433EF526EFA9BF0058A42A /* SimpleWeatherAppTests.swift in Sources */,
+				FA894C8826F254520037064E /* FiveDayWeatherForecast.swift in Sources */,
 				FA433F1326EFAF3E0058A42A /* WeatherAPI.swift in Sources */,
 				FA894C7226F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */,
 			);
