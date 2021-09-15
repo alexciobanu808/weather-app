@@ -104,10 +104,10 @@
 		FA433EE126EFA9BA0058A42A /* SimpleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA894C7C26F24BF40037064E /* Views */,
 				FA894C6F26F1711B0037064E /* ViewModels */,
 				FA433F1026EFAEB30058A42A /* Networking */,
 				FA433EE226EFA9BA0058A42A /* SimpleWeatherAppApp.swift */,
-				FA433EE426EFA9BA0058A42A /* CurrentWeatherView.swift */,
 				FA433EE626EFA9BF0058A42A /* Assets.xcassets */,
 				FA433EEB26EFA9BF0058A42A /* Info.plist */,
 				FA433EE826EFA9BF0058A42A /* Preview Content */,
@@ -164,6 +164,14 @@
 				FA894C7026F1713C0037064E /* CurrentWeatherViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA894C7C26F24BF40037064E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA433EE426EFA9BA0058A42A /* CurrentWeatherView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
