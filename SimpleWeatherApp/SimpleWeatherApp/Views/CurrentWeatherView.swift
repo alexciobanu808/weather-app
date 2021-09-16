@@ -30,7 +30,7 @@ struct CurrentWeatherView: View {
             }
         }
         .onAppear {
-            viewModel.fetchCurrentWeather()
+            viewModel.requestAuthorization()
         }
     }
 }
