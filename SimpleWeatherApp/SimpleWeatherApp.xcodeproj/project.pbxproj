@@ -14,7 +14,7 @@
 		FA433EE526EFA9BA0058A42A /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EE426EFA9BA0058A42A /* CurrentWeatherView.swift */; };
 		FA433EE726EFA9BF0058A42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA433EE626EFA9BF0058A42A /* Assets.xcassets */; };
 		FA433EEA26EFA9BF0058A42A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA433EE926EFA9BF0058A42A /* Preview Assets.xcassets */; };
-		FA433EF526EFA9BF0058A42A /* SimpleWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EF426EFA9BF0058A42A /* SimpleWeatherAppTests.swift */; };
+		FA433EF526EFA9BF0058A42A /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EF426EFA9BF0058A42A /* DateFormatterTests.swift */; };
 		FA433F0026EFA9BF0058A42A /* SimpleWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EFF26EFA9BF0058A42A /* SimpleWeatherAppUITests.swift */; };
 		FA433F1226EFAF3E0058A42A /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433F1126EFAF3E0058A42A /* WeatherAPI.swift */; };
 		FA433F1326EFAF3E0058A42A /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433F1126EFAF3E0058A42A /* WeatherAPI.swift */; };
@@ -55,7 +55,7 @@
 		FA433EE926EFA9BF0058A42A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA433EEB26EFA9BF0058A42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA433EF026EFA9BF0058A42A /* SimpleWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA433EF426EFA9BF0058A42A /* SimpleWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppTests.swift; sourceTree = "<group>"; };
+		FA433EF426EFA9BF0058A42A /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		FA433EF626EFA9BF0058A42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA433EFB26EFA9BF0058A42A /* SimpleWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA433EFF26EFA9BF0058A42A /* SimpleWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppUITests.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		FA433EF326EFA9BF0058A42A /* SimpleWeatherAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA433EF426EFA9BF0058A42A /* SimpleWeatherAppTests.swift */,
+				FA433EF426EFA9BF0058A42A /* DateFormatterTests.swift */,
 				FA433EF626EFA9BF0058A42A /* Info.plist */,
 			);
 			path = SimpleWeatherAppTests;
@@ -343,7 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA433F1D26EFE2030058A42A /* CurrentWeatherForecast.swift in Sources */,
-				FA433EF526EFA9BF0058A42A /* SimpleWeatherAppTests.swift in Sources */,
+				FA433EF526EFA9BF0058A42A /* DateFormatterTests.swift in Sources */,
 				FA894C8826F254520037064E /* FiveDayWeatherForecast.swift in Sources */,
 				FA433F1326EFAF3E0058A42A /* WeatherAPI.swift in Sources */,
 				FA894C7226F1713C0037064E /* CurrentWeatherViewModel.swift in Sources */,

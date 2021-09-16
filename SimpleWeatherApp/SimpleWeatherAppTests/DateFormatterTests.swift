@@ -1,6 +1,6 @@
 //
-//  SimpleWeatherAppTests.swift
-//  SimpleWeatherAppTests
+//  DateFormatterTests.swift
+//  DateFormatterTests
 //
 //  Created by Alex Ciobanu on 9/13/21.
 //
@@ -8,7 +8,7 @@
 import XCTest
 @testable import SimpleWeatherApp
 
-class SimpleWeatherAppTests: XCTestCase {
+class DateFormatterTests: XCTestCase {
 
     func testDateFormatterReturnsCorrectFormat() throws {
         let date = Date(timeIntervalSince1970: 1631728800)
