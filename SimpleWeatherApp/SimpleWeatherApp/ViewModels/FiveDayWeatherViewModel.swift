@@ -12,7 +12,7 @@ class FiveDayWeatherViewModel: NSObject, ObservableObject, CLLocationManagerDele
     @Published var fiveDayWeather: FiveDayWeatherForecast?
     let locationManager = CLLocationManager()
     
-    private let dateFormatter = makeDateFormatter()
+    private let dateFormatter = DateFormatter.makeDateFormatter()
     private let api = WeatherAPI()
     
     func requestAuthorization() {
@@ -63,9 +63,4 @@ class FiveDayWeatherViewModel: NSObject, ObservableObject, CLLocationManagerDele
     }
 }
 
-private func makeDateFormatter() -> DateFormatter {
-    let formatter = DateFormatter()
-    formatter.dateFormat = "EE, MMM d h:mm a"
-    formatter.timeZone = TimeZone(abbreviation: "UTC")
-    return formatter
-}
+

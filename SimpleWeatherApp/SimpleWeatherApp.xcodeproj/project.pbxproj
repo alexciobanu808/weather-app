@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA34A80526F39E7E008D14A3 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34A80426F39E7E008D14A3 /* DateFormatterExtensions.swift */; };
 		FA37841A26F26EB10051662E /* FiveDayWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37841926F26EB10051662E /* FiveDayWeatherViewModel.swift */; };
 		FA37841B26F26EB10051662E /* FiveDayWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37841926F26EB10051662E /* FiveDayWeatherViewModel.swift */; };
 		FA433EE326EFA9BA0058A42A /* SimpleWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA433EE226EFA9BA0058A42A /* SimpleWeatherAppApp.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA34A80426F39E7E008D14A3 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		FA37841926F26EB10051662E /* FiveDayWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayWeatherViewModel.swift; sourceTree = "<group>"; };
 		FA433EDF26EFA9BA0058A42A /* SimpleWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA433EE226EFA9BA0058A42A /* SimpleWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeatherAppApp.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA34A80326F39E43008D14A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA34A80426F39E7E008D14A3 /* DateFormatterExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FA433ED626EFA9BA0058A42A = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		FA433EE126EFA9BA0058A42A /* SimpleWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA34A80326F39E43008D14A3 /* Extensions */,
 				FA894C7C26F24BF40037064E /* Views */,
 				FA894C6F26F1711B0037064E /* ViewModels */,
 				FA433F1026EFAEB30058A42A /* Networking */,
@@ -316,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA433F1226EFAF3E0058A42A /* WeatherAPI.swift in Sources */,
+				FA34A80526F39E7E008D14A3 /* DateFormatterExtensions.swift in Sources */,
 				FA433EE526EFA9BA0058A42A /* CurrentWeatherView.swift in Sources */,
 				FA894C8726F254520037064E /* FiveDayWeatherForecast.swift in Sources */,
 				FA894C7E26F24C590037064E /* FiveDayWeatherView.swift in Sources */,
