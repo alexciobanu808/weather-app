@@ -29,6 +29,7 @@ struct FiveDayWeatherForecast: Decodable {
         
         struct WeatherDescription: Decodable {
             let description: String
+            let icon: String
         }
         
         enum CodingKeys: String, CodingKey {

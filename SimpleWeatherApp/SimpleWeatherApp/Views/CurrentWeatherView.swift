@@ -11,11 +11,12 @@ struct CurrentWeatherView: View {
     @StateObject var viewModel = CurrentWeatherViewModel()
     
     var body: some View {
-        VStack(spacing: 30
+        VStack(spacing: 25
         ) {
             if let weather = viewModel.currentWeather {
                 Text(weather.name)
                     .font(.system(size: 70))
+                Image(weather.weather[0].icon)
                 Text(weather.weather[0].description.capitalized)
                     .font(.system(size: 25))
                 Text("\(Int(weather.main.temp.rounded()))º")

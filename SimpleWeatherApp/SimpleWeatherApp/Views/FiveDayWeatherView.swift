@@ -26,6 +26,11 @@ struct FiveDayWeatherView: View {
                                 Text(weatherDescription.capitalized)
                             }
                             Spacer()
+                            if let icon = weatherEntry.weather.first?.icon {
+                                Image(icon)
+                                    .resizable()
+                                    .frame(width: 90, height: 90)
+                            }
                             Text("\(Int(weatherEntry.main.temp))º")
                                 .font(.system(size: 30))
                         }
