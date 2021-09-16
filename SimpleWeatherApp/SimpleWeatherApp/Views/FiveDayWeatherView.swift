@@ -36,6 +36,9 @@ struct FiveDayWeatherView: View {
                 Text("Loading")
             }
         }
+        .onAppear {
+            viewModel.requestAuthorization()
+        }
     }
 }
 

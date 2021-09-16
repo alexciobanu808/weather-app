@@ -6,14 +6,27 @@
 //
 
 import Foundation
+import CoreLocation
 
-class FiveDayWeatherViewModel: ObservableObject {
+class FiveDayWeatherViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var fiveDayWeather: FiveDayWeatherForecast?
+    let locationManager = CLLocationManager()
     
+    private let dateFormatter = makeDateFormatter()
     private let api = WeatherAPI()
     
-    func fetchFiveDayWeather() {
-        api.getFiveDayWeather(zip: "48381") { [weak self] result in
+    func requestAuthorization() {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+    }
+    
+    private func fetchFiveDayWeather(for location: CLPlacemark) {
+        guard let zip = location.postalCode else {
+            print("Zip not found.")
+            return
+        }
+        
+        api.getFiveDayWeather(zip: zip) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let fiveDayForecast):
@@ -24,4 +37,35 @@ class FiveDayWeatherViewModel: ObservableObject {
             }
         }
     }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways || status == .authorizedWhenInUse {
+            manager.startUpdatingLocation()
+            if let location = manager.location {
+                CLGeocoder().reverseGeocodeLocation(location) { (placemarks, error) in
+                    if let error = error {
+                        print(error)
+                        return
+                    }
+                    
+                    if let currentLocation = placemarks?.first {
+                        self.fetchFiveDayWeather(for: currentLocation)
+                    }
+                }
+            }
+        }
+    }
+    
+    func format(seconds: Int) -> String {
+        let date = Date(timeIntervalSince1970: Double(seconds))
+        
+        return dateFormatter.string(from: date)
+    }
+}
+
+private func makeDateFormatter() -> DateFormatter {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "EE, MMM d h:mm a"
+    formatter.timeZone = TimeZone(abbreviation: "UTC")
+    return formatter
 }
