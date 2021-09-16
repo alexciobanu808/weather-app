@@ -9,11 +9,19 @@ import Foundation
 
 struct FiveDayWeatherForecast: Decodable {
     let list: [WeatherEntry]
+    let city: City
     
     struct WeatherEntry: Decodable {
-        let dateString: String
+        let date: Int
+        let dateTimeString: String
         let main: TemperatureDetails
         let weather: [WeatherDescription]
+        
+        var dateString: String? {
+            guard let date = dateTimeString.split(separator: " ").first else { return nil }
+            
+            return String(date)
+        }
         
         struct TemperatureDetails: Decodable {
             let temp: Double
@@ -24,9 +32,14 @@ struct FiveDayWeatherForecast: Decodable {
         }
         
         enum CodingKeys: String, CodingKey {
-            case dateString = "dt_txt"
+            case date = "dt"
+            case dateTimeString = "dt_txt"
             case main
             case weather
         }
+    }
+    
+    struct City: Decodable {
+        let name: String
     }
 }
